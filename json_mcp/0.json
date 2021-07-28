@@ -1,0 +1,50 @@
+{
+  "Ads": [
+    {
+      "initial_admob":"NO",
+      "initial_mopub":"NO",
+      "initial_applovin":"NO",
+      "initial_startapp":"NO",
+
+      "select_banner":"xADMOB",
+      "select_inter":"xADMOB",
+      "select_reward":"xADMOB",
+      "select_backup_reward":"xADMOB",
+      "select_backup_ads":"xADMOB",
+
+
+
+      "status_app": "0",
+      "link_redirect": "https://",
+      "backup_mode": "NO",
+
+
+      "admob_inter": "",
+      "admob_native": "",
+      "admob_native_banner": "",
+      "admob_open": "",
+      "admob_reward":"",
+      "banner_apa_native":"BANNER",
+
+
+      "interval": 5,
+      "startappid": "205147161",
+      "age1": 18,
+      "age2": 30,
+
+
+
+      "mopub_banner": "XX",
+      "mopub_inter": "XX",
+      "mopub_mrec": "XX",
+      "mopub_reward": "XX",
+
+      "applovin_banner": "XX",
+      "applovin_inter": "XX",
+      "applovin_reward": "XX",
+      "applovin_mrec": "XX"
+    }
+  ],
+
+  
+}
