@@ -1,0 +1,198 @@
+{
+  
+  "Skin":
+  [
+    {
+      "id":1,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin1.png",
+      "view_skin":"file:///android_asset/1.webp"
+    },
+    {
+      "id":2,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin2.png",
+      "view_skin":"file:///android_asset/2.webp"
+    },
+    {
+      "id":3,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin3.png",
+      "view_skin":"file:///android_asset/3.webp"
+    },
+    {
+      "id":4,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin4.png",
+      "view_skin":"file:///android_asset/4.webp"
+    },
+    {
+      "id":5,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin5.png",
+      "view_skin":"file:///android_asset/5.webp"
+    },
+    {
+      "id":6,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin6.png",
+      "view_skin":"file:///android_asset/6.webp"
+    },
+    {
+      "id":7,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin7.png",
+      "view_skin":"file:///android_asset/7.webp"
+    },
+    {
+      "id":8,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin8.png",
+      "view_skin":"file:///android_asset/8.webp"
+    },
+    {
+      "id":9,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin9.png",
+      "view_skin":"file:///android_asset/9.webp"
+    },
+    {
+      "id":10,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin10.png",
+      "view_skin":"file:///android_asset/10.webp"
+    },
+    {
+      "id":11,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin11.png",
+      "view_skin":"file:///android_asset/11.webp"
+    },
+    {
+      "id":12,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin12.png",
+      "view_skin":"file:///android_asset/12.webp"
+    },
+    {
+      "id":13,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin13.png",
+      "view_skin":"file:///android_asset/13.webp"
+    },
+    {
+      "id":14,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin14.png",
+      "view_skin":"file:///android_asset/14.webp"
+    },
+    {
+      "id":15,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin15.png",
+      "view_skin":"file:///android_asset/15.webp"
+    },
+    {
+      "id":17,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin17.png",
+      "view_skin":"file:///android_asset/17.webp"
+    },
+    {
+      "id":18,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin18.png",
+      "view_skin":"file:///android_asset/18.webp"
+    },
+    {
+      "id":19,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin19.png",
+      "view_skin":"file:///android_asset/19.webp"
+    },
+    {
+      "id":20,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin20.png",
+      "view_skin":"file:///android_asset/20.webp"
+    },
+    {
+      "id":21,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin21.png",
+      "view_skin":"file:///android_asset/21.webp"
+    },
+    {
+      "id":22,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin22.png",
+      "view_skin":"file:///android_asset/22.webp"
+    },
+    {
+      "id":23,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin23.png",
+      "view_skin":"file:///android_asset/23.webp"
+    },
+    {
+      "id":24,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin24.png",
+      "view_skin":"file:///android_asset/24.webp"
+    },
+    {
+      "id":25,
+      "nama_skin":"SCP SKIN",
+      "skin_url":"https://rastariski01.github.io/scpmodmcpe/skin/skin25.png",
+      "view_skin":"file:///android_asset/25.webp"
+    }
+  ],
+  "Addons":
+  [
+    {
+      "id":1,
+      "nama_add":"SCP MOD ADDON",
+      "add_url":"https://rastariski01.github.io/scpmodmcpe/addon/addon1.zip",
+      "addB_url":"https://rastariski01.github.io/scpmodmcpe/addon/addon1(B).mcpack",
+      "addR_url":"https://rastariski01.github.io/scpmodmcpe/addon/addon1(R).mcpack",
+      "view_add":"file:///android_asset/ad1.webp",
+      "des_add":"file:///android_asset/adon.html"
+    },
+    {
+      "id":2,
+      "nama_add":"SCP MOD ADDON",
+      "add_url":"https://rastariski01.github.io/scpmodmcpe/addon/addon2.zip",
+      "addB_url":"https://rastariski01.github.io/scpmodmcpe/addon/addon2(B).mcpack",
+      "addR_url":"https://rastariski01.github.io/scpmodmcpe/addon/addon2(R).mcpack",
+      "view_add":"file:///android_asset/ad2.webp",
+      "des_add":"file:///android_asset/adon.html"
+    },
+    {
+      "id":3,
+      "nama_add":"SCP MOD ADDON",
+      "add_url":"https://rastariski01.github.io/scpmodmcpe/addon/addon3.zip",
+      "addB_url":"https://rastariski01.github.io/scpmodmcpe/addon/addon3(B).mcpack",
+      "addR_url":"https://rastariski01.github.io/scpmodmcpe/addon/addon3(R).mcpack",
+      "view_add":"file:///android_asset/ad3.webp",
+      "des_add":"file:///android_asset/adon.html"
+    }
+
+  ],
+  "Maps":
+  [
+    {
+      "id":1,
+      "nama_map":"SCP MAP",
+      "map_url":"https://rastariski01.github.io/scpmodmcpe/map/map1.zip",
+      "view_map":"file:///android_asset/map1.webp",
+      "des_map":"file:///android_asset/map.html"
+    },
+    {
+      "id":2,
+      "nama_map":"SCP MAP",
+      "map_url":"https://rastariski01.github.io/scpmodmcpe/map/map2.zip",
+      "view_map":"file:///android_asset/map2.webp",
+      "des_map":"file:///android_asset/map.html"
+    }
+  ]
+}

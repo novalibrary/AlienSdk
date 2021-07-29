@@ -142,15 +142,7 @@
   ],
   "Addons":
   [
-    {
-      "id":1,
-      "nama_add":"AOT MOD ADDON",
-      "add_url":"https://rastariski01.github.io/attackoftitanmod/aotaddon1.zip",
-      "addB_url":"https://rastariski01.github.io/attackoftitanmod/aotaddon1(b).mcpack",
-      "addR_url":"https://rastariski01.github.io/attackoftitanmod/aotaddon1(r).mcpack",
-      "view_add":"https://klipi.github.io/json_mcp/01_aot_skin/ad1.webp",
-      "des_add":"https://klipi.github.io/json_mcp/01_aot_skin/adon.html"
-    },
+    
     {
       "id":2,
       "nama_add":"AOT MOD ADDON",
@@ -190,13 +182,7 @@
   ],
   "Maps":
   [
-    {
-      "id":1,
-      "nama_map":"AOT MAP",
-      "map_url":"https://aliendro.id/wp-content/addon/MC Battle Royal.zip",
-      "view_map":"https://klipi.github.io/json_mcp/01_aot_skin/map2.webp",
-      "des_map":"https://klipi.github.io/json_mcp/01_aot_skin/map.html"
-    },
+    
     {
       "id":2,
       "nama_map":"Achievement",
