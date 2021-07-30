@@ -1,0 +1,193 @@
+{
+  "geometry": "skinpacks/skins.json",
+  "skins": [
+	{
+      "localization_name": "RoseGold",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NRGo.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Diamond",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NDa.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Netherite",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NNe.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Gold",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NGo.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Silver",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NSi.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Rainbow Strikes",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewRainbow.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Sky",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewSky.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Static",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewSTATIC.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Aesthetic Kick",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Aest.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Depression",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "DEPRESSION.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Diamondhb",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "newBee.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Diamondhd",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewDiamondirt.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Silver w Drip",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewSilverDrip.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Scary",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Creepy.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Angry",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Angry.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Silver Evil",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NSEvil.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Pink",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewPink.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Peach",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewPeach.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Strawberry",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewStrawberry.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Yellow",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewYellow.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Green",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewGreen.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Cyan",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewCyan.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "LightBlue",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewLightBlue.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Blue",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewBlue.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Purple",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewPurple.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "White",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewWhite.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "LightGray",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewLightGray.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Gray",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewGray.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Black",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewBlack.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Colorful",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewColorful.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Colorful Sad",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "NewColorfulSad.png",
+      "type": "free"
+    }
+  ],
+  "serialize_name": "§d§o§lCutePixel!",
+  "localization_name": "§d§o§lCutePixel!"
+}
