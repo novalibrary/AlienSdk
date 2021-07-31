@@ -1,0 +1,23 @@
+{
+    "format_version": 1,
+    "header": {
+        "name": "Minecraft YouTubers 4.7 Part 1",
+        "uuid": "82313ecf-f285-4c1f-8686-8da509b0c728",
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "skin_pack",
+            "uuid": "212c0b24-6332-408d-9faa-7fef14d2e836",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}
