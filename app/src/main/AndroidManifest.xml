@@ -33,6 +33,7 @@
             android:name="applovin.sdk.key"
             android:value="@string/sdk_key_applovin" />
 
+
     </application>
 
 </manifest>

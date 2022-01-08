@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         switch (SELECT_ADS) {
             case "ADMOB":
                 AliendroidInitialize.SelectAdsAdmob(MainActivity.this,BACKUP_ADS,INITIALIZE_SDK_BACKUPADS);
-                AliendroidNative.SmallNativeAdmob(this,SELECT_ADS, BACKUP_ADS, nativeads, NATIVE_ADS_ADMOB, BACKUP_ADS_BANNER,
+                AliendroidNative.MediumNative(this,SELECT_ADS, BACKUP_ADS, nativeads, NATIVE_ADS_ADMOB, BACKUP_ADS_BANNER,
                        HIGH_PAYING_KEYWORD1, HIGH_PAYING_KEYWORD2, HIGH_PAYING_KEYWORD3, HIGH_PAYING_KEYWORD4, HIGH_PAYING_KEYWORD5);
                 AliendroidIntertitial.LoadIntertitialAdmob(MainActivity.this, BACKUP_ADS, MAIN_ADS_INTERTITIAL, BACKUP_ADS_INTERTITIAL, HIGH_PAYING_KEYWORD1,
                         HIGH_PAYING_KEYWORD2, HIGH_PAYING_KEYWORD3, HIGH_PAYING_KEYWORD4, HIGH_PAYING_KEYWORD5);

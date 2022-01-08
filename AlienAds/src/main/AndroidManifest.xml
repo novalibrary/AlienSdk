@@ -28,5 +28,7 @@
             android:authorities="${applicationId}.IronsourceLifecycleProvider"
             android:name="com.ironsource.lifecycle.IronsourceLifecycleProvider" />
 
+
+
     </application>
 </manifest>
