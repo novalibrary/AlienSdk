@@ -1,5 +1,6 @@
 package com.aliendroid.samplealienads;
 
+import static com.aliendroid.samplealienads.SettingAds.ADMOB_INTER2;
 import static com.aliendroid.samplealienads.SettingAds.BACKUP_ADS;
 import static com.aliendroid.samplealienads.SettingAds.BACKUP_ADS_BANNER;
 import static com.aliendroid.samplealienads.SettingAds.BACKUP_ADS_INTERTITIAL;
@@ -16,6 +17,7 @@ import static com.aliendroid.samplealienads.SettingAds.MAIN_ADS_BANNER;
 import static com.aliendroid.samplealienads.SettingAds.MAIN_ADS_INTERTITIAL;
 import static com.aliendroid.samplealienads.SettingAds.MAIN_ADS_REWARDS;
 import static com.aliendroid.samplealienads.SettingAds.NATIVE_ADS_ADMOB;
+import static com.aliendroid.samplealienads.SettingAds.NATIVE_ADS_ADMOB2;
 import static com.aliendroid.samplealienads.SettingAds.SELECT_ADS;
 
 import android.os.Bundle;
@@ -62,8 +64,7 @@ public class MainActivity extends AppCompatActivity {
         switch (SELECT_ADS) {
             case "ADMOB":
                 AliendroidInitialize.SelectAdsAdmob(MainActivity.this,BACKUP_ADS,INITIALIZE_SDK_BACKUPADS);
-                AliendroidNative.MediumNative(this,SELECT_ADS, BACKUP_ADS, nativeads, NATIVE_ADS_ADMOB, BACKUP_ADS_BANNER,
-                       HIGH_PAYING_KEYWORD1, HIGH_PAYING_KEYWORD2, HIGH_PAYING_KEYWORD3, HIGH_PAYING_KEYWORD4, HIGH_PAYING_KEYWORD5);
+                AliendroidNative.SmallNativeAdmob2gantian(this,SELECT_ADS, BACKUP_ADS, nativeads, NATIVE_ADS_ADMOB,NATIVE_ADS_ADMOB2, BACKUP_ADS_BANNER);
                 AliendroidIntertitial.LoadIntertitialAdmob(MainActivity.this, BACKUP_ADS, MAIN_ADS_INTERTITIAL, BACKUP_ADS_INTERTITIAL, HIGH_PAYING_KEYWORD1,
                         HIGH_PAYING_KEYWORD2, HIGH_PAYING_KEYWORD3, HIGH_PAYING_KEYWORD4, HIGH_PAYING_KEYWORD5);
                 AliendroidReward.LoadRewardAdmob(MainActivity.this,BACKUP_ADS,MAIN_ADS_REWARDS,BACKUP_ADS_REWARDS);
@@ -120,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
     public void munculiklan(View view){
         switch (SELECT_ADS) {
             case "ADMOB":
-                AliendroidIntertitial.ShowIntertitialAdmob(MainActivity.this, BACKUP_ADS, MAIN_ADS_INTERTITIAL, BACKUP_ADS_INTERTITIAL, INTERVAL,
+                AliendroidIntertitial.ShowIntertitialAdmob2(MainActivity.this, BACKUP_ADS, MAIN_ADS_INTERTITIAL, ADMOB_INTER2 , BACKUP_ADS_INTERTITIAL, INTERVAL,
                         HIGH_PAYING_KEYWORD1, HIGH_PAYING_KEYWORD2, HIGH_PAYING_KEYWORD3, HIGH_PAYING_KEYWORD4, HIGH_PAYING_KEYWORD5);
                 break;
             case "APPLOVIN-D":
