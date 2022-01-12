@@ -716,7 +716,7 @@ public class AliendroidNative {
                     nativeAd = nativeAds;
                     NativeAdView adView = (NativeAdView) activity.getLayoutInflater()
                             .inflate(R.layout.admob_native, null);
-                    populateNativeAdView2(nativeAds, adView);
+                    populateNativeAdView(nativeAds, adView);
                     layNative.removeAllViews();
                     layNative.addView(adView);
                 }
