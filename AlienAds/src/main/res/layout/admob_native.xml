@@ -144,7 +144,8 @@
                                     android:lines="1"
                                     android:text="Advertiser"
                                     android:textColor="#000000"
-                                    android:textSize="11sp"
+                                    android:textSize="10sp"
+                                    android:visibility="gone"
                                     android:textStyle="bold" />
 
 
@@ -154,6 +155,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="2dp"
                                     android:lines="1"
+                                    android:visibility="gone"
                                     android:text="Free"
                                     android:textColor="#7E7979"
                                     android:textSize="9sp" />
@@ -165,6 +167,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="2dp"
                                     android:lines="1"
+                                    android:visibility="gone"
                                     android:paddingStart="5dp"
                                     android:paddingLeft="2dp"
                                     android:paddingEnd="5dp"
@@ -205,6 +208,7 @@
                         android:background="@drawable/button1"
                         android:gravity="center"
                         android:minHeight="34dp"
+                        android:visibility="gone"
                         android:text="LEARN MORE"
                         android:textColor="#000000"
                         android:textSize="12sp" />
