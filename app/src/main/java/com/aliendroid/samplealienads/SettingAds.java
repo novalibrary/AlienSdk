@@ -7,7 +7,7 @@ public class SettingAds {
     public static String MAIN_ADS_BANNER ="topBanner";
     public static String BACKUP_ADS_BANNER="topBanner";
 
-    public static String MAIN_ADS_INTERTITIAL ="ca-app-pub-3940256099942544/1033173712";
+    public static String MAIN_ADS_INTERTITIAL ="Xca-app-pub-3940256099942544/1033173712";
     public static String BACKUP_ADS_INTERTITIAL="40256099942544/34198352";
 
     public static String MAIN_ADS_REWARDS ="Rewarded_Android";
@@ -20,11 +20,11 @@ public class SettingAds {
     public static String INITIALIZE_SDK = "INITIALIZE_SDK";
     public static String INITIALIZE_SDK_BACKUPADS = "INITIALIZE_SDK_BACKUPADS";
 
-    public static String HIGH_PAYING_KEYWORD1="Finance";
-    public static String HIGH_PAYING_KEYWORD2="";
+    public static String HIGH_PAYING_KEYWORD1="ca-app-pub-3940256099942544/1033173712";
+    public static String HIGH_PAYING_KEYWORD2="ca-app-pub-3940256099942544/1033173712";
     public static String HIGH_PAYING_KEYWORD3="";
     public static String HIGH_PAYING_KEYWORD4="";
-    public static String HIGH_PAYING_KEYWORD5="";
+    public static String HIGH_PAYING_KEYWORD5="ca-app-pub-3940256099942544/1033173712";
 
     public static int INTERVAL = 0;
         /*

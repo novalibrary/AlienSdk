@@ -5,6 +5,8 @@ import static androidx.constraintlayout.motion.utils.Oscillator.TAG;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -44,6 +46,200 @@ public class AliendroidIntertitial {
 
 
     public static boolean DUAL = true;
+    public static int INTERNYA = 1;
+
+
+
+    public static void ShowIntertitialAdmob(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup,
+                                            int interval, String Hpk1,
+                                            String Hpk2, String Hpk3, String Hpk4, String Hpk5) {
+        if (counter >= interval) {
+
+            if (INTERNYA == 1) {
+                if (mInterstitialAd != null) {
+                    mInterstitialAd.show(activity);
+                    LoadIntertitialAdmob(activity, selectAdsBackup, Hpk1, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
+                    INTERNYA = 2;
+                    Toast.makeText(activity, "INTER 1 MUNCUL INTER 2 LOAD", Toast.LENGTH_LONG).show();
+                } else {
+                    switch (selectAdsBackup) {
+                        case "APPLOVIN-M":
+                            if (interstitialAd.isReady()) {
+                                interstitialAd.showAd();
+                                interstitialAd.loadAd();
+                            } else {
+                                interstitialAd.loadAd();
+                            }
+                            break;
+                        case "MOPUB":
+
+                            break;
+                        case "IRON":
+                            IronSource.showInterstitial(idIntertitialBackup);
+                            break;
+                        case "STARTAPP":
+
+                            break;
+                        case "APPLOVIN-D":
+                            if (interstitialAdlovin != null) {
+                                interstitialAdlovin.showAndRender(loadedAd);
+                            }
+                            break;
+                        case "FACEBOOK":
+                            if (FBinterstitialAd == null || !FBinterstitialAd.isAdLoaded()) {
+                            } else {
+                                FBinterstitialAd.show();
+                            }
+                            break;
+                        case "UNITY":
+
+                            break;
+                    }
+                    LoadIntertitialAdmob(activity, selectAdsBackup, Hpk1, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
+                }
+
+
+            }
+            else if (INTERNYA == 2){
+                if (mInterstitialAd != null) {
+                    mInterstitialAd.show(activity);
+                    LoadIntertitialAdmob(activity, selectAdsBackup, Hpk2, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
+                    INTERNYA = 3;
+                    Toast.makeText(activity, "INTER 2 MUNCUL INTER 3 LOAD", Toast.LENGTH_LONG).show();
+                } else {
+                    switch (selectAdsBackup) {
+                        case "APPLOVIN-M":
+                            if (interstitialAd.isReady()) {
+                                interstitialAd.showAd();
+                                interstitialAd.loadAd();
+                            } else {
+                                interstitialAd.loadAd();
+                            }
+                            break;
+                        case "MOPUB":
+
+                            break;
+                        case "IRON":
+                            IronSource.showInterstitial(idIntertitialBackup);
+                            break;
+                        case "STARTAPP":
+
+                            break;
+                        case "APPLOVIN-D":
+                            if (interstitialAdlovin != null) {
+                                interstitialAdlovin.showAndRender(loadedAd);
+                            }
+                            break;
+                        case "FACEBOOK":
+                            if (FBinterstitialAd == null || !FBinterstitialAd.isAdLoaded()) {
+                            } else {
+                                FBinterstitialAd.show();
+                            }
+                            break;
+                        case "UNITY":
+
+                            break;
+                    }
+                    LoadIntertitialAdmob(activity, selectAdsBackup, Hpk2, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
+                }
+
+            }
+            else if (INTERNYA == 3){
+                if (mInterstitialAd != null) {
+                    mInterstitialAd.show(activity);
+                    LoadIntertitialAdmob(activity, selectAdsBackup, Hpk3, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
+                    INTERNYA = 4;
+                    Toast.makeText(activity, "INTER 3 MUNCUL INTER 4 LOAD", Toast.LENGTH_LONG).show();
+                } else {
+                    switch (selectAdsBackup) {
+                        case "APPLOVIN-M":
+                            if (interstitialAd.isReady()) {
+                                interstitialAd.showAd();
+                                interstitialAd.loadAd();
+                            } else {
+                                interstitialAd.loadAd();
+                            }
+                            break;
+                        case "MOPUB":
+
+                            break;
+                        case "IRON":
+                            IronSource.showInterstitial(idIntertitialBackup);
+                            break;
+                        case "STARTAPP":
+
+                            break;
+                        case "APPLOVIN-D":
+                            if (interstitialAdlovin != null) {
+                                interstitialAdlovin.showAndRender(loadedAd);
+                            }
+                            break;
+                        case "FACEBOOK":
+                            if (FBinterstitialAd == null || !FBinterstitialAd.isAdLoaded()) {
+                            } else {
+                                FBinterstitialAd.show();
+                            }
+                            break;
+                        case "UNITY":
+
+                            break;
+                    }
+                    LoadIntertitialAdmob(activity, selectAdsBackup, Hpk3, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
+                }
+
+            }
+            else if (INTERNYA == 4){
+                if (mInterstitialAd != null) {
+                    mInterstitialAd.show(activity);
+                    LoadIntertitialAdmob(activity, selectAdsBackup, idIntertitial, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
+                    INTERNYA = 5;
+                    Toast.makeText(activity, "INTER 4 MUNCUL INTER 5 LOAD", Toast.LENGTH_LONG).show();
+                } else {
+                    switch (selectAdsBackup) {
+                        case "APPLOVIN-M":
+                            if (interstitialAd.isReady()) {
+                                interstitialAd.showAd();
+                                interstitialAd.loadAd();
+                            } else {
+                                interstitialAd.loadAd();
+                            }
+                            break;
+                        case "MOPUB":
+
+                            break;
+                        case "IRON":
+                            IronSource.showInterstitial(idIntertitialBackup);
+                            break;
+                        case "STARTAPP":
+
+                            break;
+                        case "APPLOVIN-D":
+                            if (interstitialAdlovin != null) {
+                                interstitialAdlovin.showAndRender(loadedAd);
+                            }
+                            break;
+                        case "FACEBOOK":
+                            if (FBinterstitialAd == null || !FBinterstitialAd.isAdLoaded()) {
+                            } else {
+                                FBinterstitialAd.show();
+                            }
+                            break;
+                        case "UNITY":
+
+                            break;
+                    }
+                    LoadIntertitialAdmob(activity, selectAdsBackup, idIntertitial, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
+                }
+
+            }
+
+
+
+            counter = 0;
+        } else {
+            counter++;
+        }
+    }
 
 
     public static void ShowIntertitialUnity(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup, int interval) {
@@ -57,104 +253,6 @@ public class AliendroidIntertitial {
     }
 
 
-    public static void ShowIntertitialAdmob2(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitial2, String idIntertitialBackup,
-                                             int interval, String Hpk1,
-                                             String Hpk2, String Hpk3, String Hpk4, String Hpk5) {
-        if (counter >= interval) {
-
-            if (DUAL) {
-                if (mInterstitialAd != null) {
-                    mInterstitialAd.show(activity);
-                    LoadIntertitialAdmob(activity, selectAdsBackup, idIntertitial2, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
-                } else {
-                    switch (selectAdsBackup) {
-                        case "APPLOVIN-M":
-                            if (interstitialAd.isReady()) {
-                                interstitialAd.showAd();
-                                interstitialAd.loadAd();
-                            } else {
-                                interstitialAd.loadAd();
-                            }
-                            break;
-                        case "MOPUB":
-
-                            break;
-                        case "IRON":
-                            IronSource.showInterstitial(idIntertitialBackup);
-                            break;
-                        case "STARTAPP":
-
-                            break;
-                        case "APPLOVIN-D":
-                            if (interstitialAdlovin != null) {
-                                interstitialAdlovin.showAndRender(loadedAd);
-                            }
-                            break;
-                        case "FACEBOOK":
-                            if (FBinterstitialAd == null || !FBinterstitialAd.isAdLoaded()) {
-                            } else {
-                                FBinterstitialAd.show();
-                            }
-                            break;
-                        case "UNITY":
-
-                            break;
-                    }
-                    LoadIntertitialAdmob(activity, selectAdsBackup, idIntertitial2, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
-                }
-                DUAL=false;
-
-            }
-            else {
-                if (mInterstitialAd != null) {
-                    mInterstitialAd.show(activity);
-                    LoadIntertitialAdmob(activity, selectAdsBackup, idIntertitial, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
-                } else {
-                    switch (selectAdsBackup) {
-                        case "APPLOVIN-M":
-                            if (interstitialAd.isReady()) {
-                                interstitialAd.showAd();
-                                interstitialAd.loadAd();
-                            } else {
-                                interstitialAd.loadAd();
-                            }
-                            break;
-                        case "MOPUB":
-
-                            break;
-                        case "IRON":
-                            IronSource.showInterstitial(idIntertitialBackup);
-                            break;
-                        case "STARTAPP":
-
-                            break;
-                        case "APPLOVIN-D":
-                            if (interstitialAdlovin != null) {
-                                interstitialAdlovin.showAndRender(loadedAd);
-                            }
-                            break;
-                        case "FACEBOOK":
-                            if (FBinterstitialAd == null || !FBinterstitialAd.isAdLoaded()) {
-                            } else {
-                                FBinterstitialAd.show();
-                            }
-                            break;
-                        case "UNITY":
-
-                            break;
-                    }
-                    LoadIntertitialAdmob(activity, selectAdsBackup, idIntertitial, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
-                }
-                DUAL=true;
-
-            }
-
-
-            counter = 0;
-        } else {
-            counter++;
-        }
-    }
 
 
         public static void LoadIntertitialAdmob(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup, String Hpk1,
@@ -166,8 +264,7 @@ public class AliendroidIntertitial {
         Bundle extras = new FacebookExtras()
                 .setNativeBanner(true)
                 .build();
-        AdRequest request = new AdRequest.Builder().addKeyword(Hpk1).addKeyword(Hpk2)
-                .addKeyword(Hpk3)
+        AdRequest request = new AdRequest.Builder()
                 .addNetworkExtrasBundle(FacebookAdapter.class, extras)
                 .addNetworkExtrasBundle(ApplovinAdapter.class, extrasApplovin)
                 .build();
@@ -212,8 +309,7 @@ public class AliendroidIntertitial {
                 IronSource.loadInterstitial();
                 break;
             case "APPLOVIN-D":
-                AdRequest.Builder builder = new AdRequest.Builder().addKeyword(Hpk1).addKeyword(Hpk2)
-                        .addKeyword(Hpk3);
+                AdRequest.Builder builder = new AdRequest.Builder();
                 Bundle interstitialExtras = new Bundle();
                 interstitialExtras.putString("zone_id", idIntertitialBackup);
                 builder.addCustomEventExtrasBundle(AppLovinCustomEventInterstitial.class, interstitialExtras);
@@ -868,104 +964,7 @@ public class AliendroidIntertitial {
 
     }
 
-    public static void ShowIntertitialAdmob(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup,
-                                            int interval, String Hpk1,
-                                            String Hpk2, String Hpk3, String Hpk4, String Hpk5) {
-        if (counter >= interval) {
 
-            if (DUAL) {
-                if (mInterstitialAd != null) {
-                    mInterstitialAd.show(activity);
-                    LoadIntertitialAdmob(activity, selectAdsBackup, Hpk5, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
-                } else {
-                    switch (selectAdsBackup) {
-                        case "APPLOVIN-M":
-                            if (interstitialAd.isReady()) {
-                                interstitialAd.showAd();
-                                interstitialAd.loadAd();
-                            } else {
-                                interstitialAd.loadAd();
-                            }
-                            break;
-                        case "MOPUB":
-
-                            break;
-                        case "IRON":
-                            IronSource.showInterstitial(idIntertitialBackup);
-                            break;
-                        case "STARTAPP":
-
-                            break;
-                        case "APPLOVIN-D":
-                            if (interstitialAdlovin != null) {
-                                interstitialAdlovin.showAndRender(loadedAd);
-                            }
-                            break;
-                        case "FACEBOOK":
-                            if (FBinterstitialAd == null || !FBinterstitialAd.isAdLoaded()) {
-                            } else {
-                                FBinterstitialAd.show();
-                            }
-                            break;
-                        case "UNITY":
-
-                            break;
-                    }
-                    LoadIntertitialAdmob(activity, selectAdsBackup, Hpk5, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
-                }
-                DUAL=false;
-
-            }
-            else {
-                if (mInterstitialAd != null) {
-                    mInterstitialAd.show(activity);
-                    LoadIntertitialAdmob(activity, selectAdsBackup, idIntertitial, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
-                } else {
-                    switch (selectAdsBackup) {
-                        case "APPLOVIN-M":
-                            if (interstitialAd.isReady()) {
-                                interstitialAd.showAd();
-                                interstitialAd.loadAd();
-                            } else {
-                                interstitialAd.loadAd();
-                            }
-                            break;
-                        case "MOPUB":
-
-                            break;
-                        case "IRON":
-                            IronSource.showInterstitial(idIntertitialBackup);
-                            break;
-                        case "STARTAPP":
-
-                            break;
-                        case "APPLOVIN-D":
-                            if (interstitialAdlovin != null) {
-                                interstitialAdlovin.showAndRender(loadedAd);
-                            }
-                            break;
-                        case "FACEBOOK":
-                            if (FBinterstitialAd == null || !FBinterstitialAd.isAdLoaded()) {
-                            } else {
-                                FBinterstitialAd.show();
-                            }
-                            break;
-                        case "UNITY":
-
-                            break;
-                    }
-                    LoadIntertitialAdmob(activity, selectAdsBackup, idIntertitial, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
-                }
-                DUAL=true;
-
-            }
-
-
-            counter = 0;
-        } else {
-            counter++;
-        }
-    }
 
 
 
