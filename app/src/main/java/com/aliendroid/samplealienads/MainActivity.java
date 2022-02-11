@@ -1,6 +1,5 @@
 package com.aliendroid.samplealienads;
 
-import static com.aliendroid.samplealienads.SettingAds.ADMOB_INTER2;
 import static com.aliendroid.samplealienads.SettingAds.BACKUP_ADS;
 import static com.aliendroid.samplealienads.SettingAds.BACKUP_ADS_BANNER;
 import static com.aliendroid.samplealienads.SettingAds.BACKUP_ADS_INTERTITIAL;
@@ -17,7 +16,6 @@ import static com.aliendroid.samplealienads.SettingAds.MAIN_ADS_BANNER;
 import static com.aliendroid.samplealienads.SettingAds.MAIN_ADS_INTERTITIAL;
 import static com.aliendroid.samplealienads.SettingAds.MAIN_ADS_REWARDS;
 import static com.aliendroid.samplealienads.SettingAds.NATIVE_ADS_ADMOB;
-import static com.aliendroid.samplealienads.SettingAds.NATIVE_ADS_ADMOB2;
 import static com.aliendroid.samplealienads.SettingAds.SELECT_ADS;
 
 import android.os.Bundle;
@@ -29,13 +27,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.aliendroid.alienads.AlienGDPR;
-import com.aliendroid.alienads.AlienOpenAds;
 import com.aliendroid.alienads.AliendroidBanner;
 import com.aliendroid.alienads.AliendroidInitialize;
 import com.aliendroid.alienads.AliendroidIntertitial;
-import com.aliendroid.alienads.AliendroidMediumBanner;
 import com.aliendroid.alienads.AliendroidNative;
-import com.aliendroid.alienads.AliendroidReward;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -64,16 +59,15 @@ public class MainActivity extends AppCompatActivity {
         switch (SELECT_ADS) {
             case "ADMOB":
                 AliendroidInitialize.SelectAdsAdmob(MainActivity.this,BACKUP_ADS,INITIALIZE_SDK_BACKUPADS);
-                AliendroidNative.SmallNativeAdmob(this,SELECT_ADS, BACKUP_ADS, nativeads, NATIVE_ADS_ADMOB, BACKUP_ADS_BANNER,HIGH_PAYING_KEYWORD1,
+                  AliendroidIntertitial.LoadIntertitialAdmob(MainActivity.this, BACKUP_ADS, MAIN_ADS_INTERTITIAL, BACKUP_ADS_INTERTITIAL, HIGH_PAYING_KEYWORD1,
                         HIGH_PAYING_KEYWORD2, HIGH_PAYING_KEYWORD3, HIGH_PAYING_KEYWORD4, HIGH_PAYING_KEYWORD5);
-                AliendroidIntertitial.LoadIntertitialAdmob(MainActivity.this, BACKUP_ADS, MAIN_ADS_INTERTITIAL, BACKUP_ADS_INTERTITIAL, HIGH_PAYING_KEYWORD1,
-                        HIGH_PAYING_KEYWORD2, HIGH_PAYING_KEYWORD3, HIGH_PAYING_KEYWORD4, HIGH_PAYING_KEYWORD5);
-                AliendroidReward.LoadRewardAdmob(MainActivity.this,BACKUP_ADS,MAIN_ADS_REWARDS,BACKUP_ADS_REWARDS);
+                AliendroidNative.SmallNativeAdmob(this, SELECT_ADS, BACKUP_ADS, nativeads, NATIVE_ADS_ADMOB,BACKUP_ADS_BANNER,HIGH_PAYING_KEYWORD1,HIGH_PAYING_KEYWORD2, HIGH_PAYING_KEYWORD3, HIGH_PAYING_KEYWORD4,HIGH_PAYING_KEYWORD5);
+
                 break;
             case "APPLOVIN-M":
                 AliendroidInitialize.SelectAdsApplovinMax(MainActivity.this,BACKUP_ADS,INITIALIZE_SDK_BACKUPADS);
-                AliendroidBanner.SmallBannerApplovinMax(MainActivity.this, layAds, BACKUP_ADS, MAIN_ADS_BANNER, BACKUP_ADS_BANNER);
-                AliendroidReward.LoadRewardApplovinMax(MainActivity.this,BACKUP_ADS,MAIN_ADS_REWARDS,BACKUP_ADS_REWARDS);
+                AliendroidNative.SmallNativeMax(MainActivity.this, layAds, BACKUP_ADS, MAIN_ADS_BANNER, BACKUP_ADS_BANNER);
+
                 AliendroidIntertitial.LoadIntertitialApplovinMax(MainActivity.this, BACKUP_ADS,MAIN_ADS_INTERTITIAL,BACKUP_ADS_INTERTITIAL);
                 break;
             case "APPLOVIN-D":
@@ -84,11 +78,10 @@ public class MainActivity extends AppCompatActivity {
                 AliendroidBanner.SmallBannerMopub(MainActivity.this, layAds, BACKUP_ADS, MAIN_ADS_BANNER, BACKUP_ADS_BANNER);
                AliendroidIntertitial.LoadIntertitialMopub(MainActivity.this, BACKUP_ADS, MAIN_ADS_INTERTITIAL,BACKUP_ADS_INTERTITIAL);
                AliendroidInitialize.SelectAdsMopub(MainActivity.this,BACKUP_ADS,INITIALIZE_SDK,INITIALIZE_SDK_BACKUPADS);
-                AliendroidReward.LoadRewardMopub(MainActivity.this,BACKUP_ADS,MAIN_ADS_REWARDS,BACKUP_ADS_REWARDS);
+
 
                 break;
             case "STARTAPP":
-                AliendroidMediumBanner.MediumBannerStartApp(MainActivity.this, layAds, BACKUP_ADS, MAIN_ADS_BANNER, BACKUP_ADS_BANNER);
                 AliendroidBanner.SmallBannerStartApp(MainActivity.this, layAds, BACKUP_ADS, MAIN_ADS_BANNER, BACKUP_ADS_BANNER);
                 AliendroidIntertitial.LoadIntertitialStartApp(MainActivity.this, BACKUP_ADS, MAIN_ADS_INTERTITIAL, BACKUP_ADS_INTERTITIAL);
                 break;
@@ -106,14 +99,14 @@ public class MainActivity extends AppCompatActivity {
                 AliendroidInitialize.SelectAdsGoogleAds(MainActivity.this,BACKUP_ADS,INITIALIZE_SDK_BACKUPADS);
                 AliendroidBanner.SmallBannerGoogleAds(MainActivity.this, layAds, BACKUP_ADS, MAIN_ADS_BANNER, BACKUP_ADS_BANNER);
                 AliendroidIntertitial.LoadIntertitialGoogleAds(MainActivity.this,BACKUP_ADS,MAIN_ADS_INTERTITIAL,BACKUP_ADS_INTERTITIAL);
-                AliendroidReward.LoadRewardGoogleAds(MainActivity.this,BACKUP_ADS,MAIN_ADS_REWARDS,BACKUP_ADS_REWARDS);
-                AliendroidNative.MediumNativeGoogleAds(MainActivity.this,SELECT_ADS, BACKUP_ADS,nativeads,NATIVE_ADS_ADMOB,BACKUP_ADS_BANNER);
+
+
                 break;
             case "UNITY":
                 AliendroidInitialize.SelectAdsUnity(MainActivity.this,BACKUP_ADS,INITIALIZE_SDK,INITIALIZE_SDK_BACKUPADS);
-                AliendroidMediumBanner.MediumBannerUnity(MainActivity.this, layAds, BACKUP_ADS, MAIN_ADS_BANNER, BACKUP_ADS_BANNER);
+                AliendroidBanner.SmallBannerUnity(MainActivity.this, layAds, BACKUP_ADS, MAIN_ADS_BANNER, BACKUP_ADS_BANNER);
                 AliendroidIntertitial.LoadIntertitialUnity(MainActivity.this, BACKUP_ADS, MAIN_ADS_INTERTITIAL, BACKUP_ADS_INTERTITIAL);
-               break;
+                break;
 
         }
 
@@ -122,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
     public void munculiklan(View view){
         switch (SELECT_ADS) {
             case "ADMOB":
-                AliendroidIntertitial.ShowIntertitialAdmob(MainActivity.this, BACKUP_ADS, MAIN_ADS_INTERTITIAL , BACKUP_ADS_INTERTITIAL, INTERVAL,
+                AliendroidIntertitial.ShowIntertitialAdmob(MainActivity.this, BACKUP_ADS, MAIN_ADS_INTERTITIAL, BACKUP_ADS_INTERTITIAL, INTERVAL,
                         HIGH_PAYING_KEYWORD1, HIGH_PAYING_KEYWORD2, HIGH_PAYING_KEYWORD3, HIGH_PAYING_KEYWORD4, HIGH_PAYING_KEYWORD5);
                 break;
             case "APPLOVIN-D":
@@ -149,42 +142,17 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "UNITY" :
                 AliendroidIntertitial.ShowIntertitialUnity(MainActivity.this, BACKUP_ADS, MAIN_ADS_INTERTITIAL, BACKUP_ADS_INTERTITIAL, INTERVAL);
-
                 break;
         }
 
 
     }
 
-    public void munculreward(View view){
-        switch (SELECT_ADS) {
-            case "ADMOB":
-                AliendroidReward.ShowRewardAdmob(MainActivity.this, BACKUP_ADS, MAIN_ADS_REWARDS, BACKUP_ADS_REWARDS);
-                break;
-            case "APPLOVIN-M":
-                AliendroidReward.ShowRewardApplovinMax(MainActivity.this, BACKUP_ADS, MAIN_ADS_REWARDS, BACKUP_ADS_REWARDS);
-                break;
-            case "MOPUB":
-                AliendroidReward.ShowRewardMopub(MainActivity.this, BACKUP_ADS, MAIN_ADS_REWARDS, BACKUP_ADS_REWARDS);
-                break;
-            case "GOOGLE-ADS":
-                AliendroidReward.ShowRewardGoogleAds(MainActivity.this, BACKUP_ADS, MAIN_ADS_REWARDS, BACKUP_ADS_REWARDS);
-                break;
-            case "UNITY":
-                break;
 
-
-        }
-    }
 
     public void onResume(){
         super.onResume();
-        if (AliendroidReward.unlockreward){
-            Toast.makeText(getApplicationContext(), "OK Berhasil", Toast.LENGTH_LONG).show();
 
-        } else {
-            Toast.makeText(getApplicationContext(), "gagal", Toast.LENGTH_LONG).show();
-        }
     }
 
     @Override

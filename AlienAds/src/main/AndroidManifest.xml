@@ -29,6 +29,5 @@
             android:name="com.ironsource.lifecycle.IronsourceLifecycleProvider" />
 
 
-
     </application>
 </manifest>

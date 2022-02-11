@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.novalibrary'
+group='com.github.aliendroid-kim'
 android {
     compileSdkVersion 31
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 19
         targetSdkVersion 31
-        versionCode 1
-        versionName "1.0"
+        versionCode 26
+        versionName "Saturn-05"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -40,22 +40,21 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads:20.5.0'
     implementation 'com.facebook.android:audience-network-sdk:6.8.0'
     implementation "com.applovin:applovin-sdk:11.0.0"
-    implementation 'com.ironsource.sdk:mediationsdk:7.1.13'
+    implementation 'com.ironsource.sdk:mediationsdk:7.1.14'
+
 
     //Mediation SDK
     implementation 'com.applovin.mediation:facebook-adapter:6.8.0.0'
     implementation 'com.ironsource.adapters:facebookadapter:4.3.30'
-    implementation 'com.google.ads.mediation:applovin:10.3.5.0'
+    implementation 'com.google.ads.mediation:applovin:11.1.0.0'
     implementation 'com.applovin.mediation:google-adapter:20.5.0.3'
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
     implementation 'com.google.android.gms:play-services-basement:18.0.0'
     implementation 'com.google.android.ump:user-messaging-platform:2.0.0'
     implementation 'com.google.ads.mediation:applovin:10.3.5.0'
-    implementation 'com.google.ads.mediation:ironsource:7.1.13.0'
+    implementation 'com.google.ads.mediation:ironsource:7.1.12.1.0'
     implementation 'com.google.ads.mediation:facebook:6.8.0.0'
 
-
     implementation 'com.flurry.android:analytics:13.0.1'
-
 
 }

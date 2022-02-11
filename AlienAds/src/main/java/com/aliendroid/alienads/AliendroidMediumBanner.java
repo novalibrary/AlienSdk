@@ -44,11 +44,6 @@ public class AliendroidMediumBanner {
     public static IronSourceBannerLayout adViewIron;
     public static com.facebook.ads.AdView adViewFAN;
 
-
-    public static void MediumBannerUnity(Activity activity, RelativeLayout layAds, String selectAdsBackup, String idBanner, String idBannerBackup) {
-
-    }
-
     public static void MediumBannerAdmob(Activity activity, RelativeLayout layAds, String selectAdsBackup, String idBanner, String idBannerBackup, String Hpk1,
                                          String Hpk2, String Hpk3, String Hpk4, String Hpk5) {
         Bundle extrasApplovin = new AppLovinExtras.Builder()
@@ -836,7 +831,6 @@ public class AliendroidMediumBanner {
                         }
                         break;
                     case "STARTAPP":
-
                         break;
                     case "MOPUB":
 
@@ -954,6 +948,9 @@ public class AliendroidMediumBanner {
         IronSource.loadBanner(adViewIron, idBanner);
     }
 
+    public static void MediumBannerUnity(Activity activity, RelativeLayout layAds, String selectAdsBackup, String idBanner, String idBannerBackup) {
 
+
+    }
 
 }

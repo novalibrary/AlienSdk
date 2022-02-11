@@ -48,6 +48,8 @@ public class SplashActivity extends AppCompatActivity {
                 AliendroidInitialize.SelectAdsStartApp(SplashActivity.this, BACKUP_ADS, INITIALIZE_SDK,INITIALIZE_SDK_BACKUPADS);
                 break;
             case "UNITY":
+                AliendroidInitialize.SelectAdsUnity(SplashActivity.this,BACKUP_ADS,INITIALIZE_SDK,INITIALIZE_SDK_BACKUPADS);
+
                 break;
         }
         AlienOpenAds.LoadOpenAds(SettingAds.OPEN_ADS_ADMOB);

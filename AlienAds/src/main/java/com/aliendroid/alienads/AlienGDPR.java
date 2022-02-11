@@ -46,6 +46,7 @@ public class AlienGDPR {
 
                 break;
             case "STARTAPP":
+
                 break;
             case "IRON":
                 IronSource.setConsent(true);

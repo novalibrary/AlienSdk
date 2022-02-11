@@ -3,9 +3,6 @@ package com.aliendroid.alienads;
 import android.app.Activity;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.applovin.sdk.AppLovinMediationProvider;
 import com.applovin.sdk.AppLovinPrivacySettings;
 import com.applovin.sdk.AppLovinSdk;
@@ -18,13 +15,11 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import com.ironsource.mediationsdk.IronSource;
 import com.ironsource.mediationsdk.integration.IntegrationHelper;
 
-import org.json.JSONException;
-
-import java.util.HashMap;
 import java.util.Map;
 
 
 public class AliendroidInitialize {
+
     public static void SelectAdsAdmob(Activity activity, String selectAdsBackup, String idInitialize) {
         MobileAds.initialize(activity, new OnInitializationCompleteListener() {
             @Override
@@ -73,7 +68,6 @@ public class AliendroidInitialize {
                 }
                 break;
             case "UNITY":
-
 
                 break;
         }
@@ -126,6 +120,7 @@ public class AliendroidInitialize {
                 }
                 break;
             case "UNITY":
+
                 break;
         }
     }
@@ -234,10 +229,6 @@ public class AliendroidInitialize {
         }
     }
 
-    public static void SelectAdsUnity(Activity activity, String selectAdsBackup, String idInitialize, String idInitializeBackupAds) {
-
-    }
-
     public static void SelectAdsMopub(Activity activity, String selectAdsBackup, String idInitialize, String idInitializeBackupAds) {
 
     }
@@ -298,6 +289,9 @@ public class AliendroidInitialize {
         }
     }
 
+    public static void SelectAdsUnity(Activity activity, String selectAdsBackup, String idInitialize, String idInitializeBackupAds) {
+
+    }
 
 
     public static void SelectAdsFAN(Activity activity, String selectAdsBackup, String idInitializeBackupAds) {
@@ -348,7 +342,6 @@ public class AliendroidInitialize {
                 IntegrationHelper.validateIntegration(activity);
                 break;
             case "UNITY":
-
 
                 break;
         }

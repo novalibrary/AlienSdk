@@ -5,8 +5,6 @@ import static androidx.constraintlayout.motion.utils.Oscillator.TAG;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -35,7 +33,6 @@ import com.ironsource.mediationsdk.sdk.InterstitialListener;
 
 public class AliendroidIntertitial {
     public static InterstitialAd mInterstitialAd;
-    public static InterstitialAd mInterstitialAd2;
     public static AdManagerInterstitialAd mAdManagerInterstitialAd;
     public static MaxInterstitialAd interstitialAd;
     public static com.facebook.ads.InterstitialAd FBinterstitialAd;
@@ -44,11 +41,12 @@ public class AliendroidIntertitial {
     public static AppLovinAd loadedAd;
     public static boolean irininter = false;
 
-
     public static boolean DUAL = true;
     public static int INTERNYA = 1;
 
+    public static void LoadIntertitialUnity(Activity activity, String selectAds, String idIntertitial, String idBackupIntertitial) {
 
+    }
 
     public static void ShowIntertitialAdmob(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup,
                                             int interval, String Hpk1,
@@ -60,7 +58,6 @@ public class AliendroidIntertitial {
                     mInterstitialAd.show(activity);
                     LoadIntertitialAdmob(activity, selectAdsBackup, Hpk1, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
                     INTERNYA = 2;
-                    Toast.makeText(activity, "INTER 1 MUNCUL INTER 2 LOAD", Toast.LENGTH_LONG).show();
                 } else {
                     switch (selectAdsBackup) {
                         case "APPLOVIN-M":
@@ -105,7 +102,6 @@ public class AliendroidIntertitial {
                     mInterstitialAd.show(activity);
                     LoadIntertitialAdmob(activity, selectAdsBackup, Hpk2, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
                     INTERNYA = 3;
-                    Toast.makeText(activity, "INTER 2 MUNCUL INTER 3 LOAD", Toast.LENGTH_LONG).show();
                 } else {
                     switch (selectAdsBackup) {
                         case "APPLOVIN-M":
@@ -149,7 +145,6 @@ public class AliendroidIntertitial {
                     mInterstitialAd.show(activity);
                     LoadIntertitialAdmob(activity, selectAdsBackup, Hpk3, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
                     INTERNYA = 4;
-                    Toast.makeText(activity, "INTER 3 MUNCUL INTER 4 LOAD", Toast.LENGTH_LONG).show();
                 } else {
                     switch (selectAdsBackup) {
                         case "APPLOVIN-M":
@@ -192,8 +187,7 @@ public class AliendroidIntertitial {
                 if (mInterstitialAd != null) {
                     mInterstitialAd.show(activity);
                     LoadIntertitialAdmob(activity, selectAdsBackup, idIntertitial, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
-                    INTERNYA = 5;
-                    Toast.makeText(activity, "INTER 4 MUNCUL INTER 5 LOAD", Toast.LENGTH_LONG).show();
+                    INTERNYA = 1;
                 } else {
                     switch (selectAdsBackup) {
                         case "APPLOVIN-M":
@@ -241,21 +235,7 @@ public class AliendroidIntertitial {
         }
     }
 
-
-    public static void ShowIntertitialUnity(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup, int interval) {
-    }
-
-
-    public static void LoadIntertitialUnity(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup) {
-    }
-
-    public static void LoadIntertitialSartApp(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup) {
-    }
-
-
-
-
-        public static void LoadIntertitialAdmob(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup, String Hpk1,
+    public static void LoadIntertitialAdmob(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup, String Hpk1,
                                             String Hpk2, String Hpk3, String Hpk4, String Hpk5) {
         Bundle extrasApplovin = new AppLovinExtras.Builder()
                 .setMuteAudio(true)
@@ -301,15 +281,13 @@ public class AliendroidIntertitial {
             case "MOPUB":
 
                 break;
-            case "UNITY":
-
-                break;
             case "IRON":
                 IronSource.isInterstitialPlacementCapped(idIntertitialBackup);
                 IronSource.loadInterstitial();
                 break;
             case "APPLOVIN-D":
-                AdRequest.Builder builder = new AdRequest.Builder();
+                AdRequest.Builder builder = new AdRequest.Builder().addKeyword(Hpk1).addKeyword(Hpk2)
+                        .addKeyword(Hpk3).addKeyword(Hpk4).addKeyword(Hpk5);
                 Bundle interstitialExtras = new Bundle();
                 interstitialExtras.putString("zone_id", idIntertitialBackup);
                 builder.addCustomEventExtrasBundle(AppLovinCustomEventInterstitial.class, interstitialExtras);
@@ -374,9 +352,6 @@ public class AliendroidIntertitial {
             case "MOPUB":
 
                 break;
-            case "UNITY":
-
-                break;
             case "IRON":
                 IronSource.isInterstitialPlacementCapped(idIntertitialBackup);
                 IronSource.loadInterstitial();
@@ -424,9 +399,6 @@ public class AliendroidIntertitial {
 
                 break;
             case "MOPUB":
-
-                break;
-            case "UNITY":
 
                 break;
             case "IRON":
@@ -540,9 +512,6 @@ public class AliendroidIntertitial {
             case "MOPUB":
 
                 break;
-            case "UNITY":
-
-                break;
             case "IRON":
                 IronSource.isInterstitialPlacementCapped(idIntertitialBackup);
                 IronSource.loadInterstitial();
@@ -641,9 +610,6 @@ public class AliendroidIntertitial {
             case "MOPUB":
 
                 break;
-            case "UNITY":
-
-                break;
             case "IRON":
                 IronSource.isInterstitialPlacementCapped(idIntertitialBackup);
                 IronSource.loadInterstitial();
@@ -735,9 +701,6 @@ public class AliendroidIntertitial {
                 interstitialAdlovin = AppLovinInterstitialAd.create(AppLovinSdk.getInstance(activity), activity);
                 break;
             case "MOPUB":
-
-                break;
-            case "UNITY":
 
                 break;
             case "IRON":
@@ -888,9 +851,6 @@ public class AliendroidIntertitial {
             case "MOPUB":
 
                 break;
-            case "UNITY":
-
-                break;
             case "APPLOVIN-M":
                 interstitialAd = new MaxInterstitialAd(idIntertitialBackup, activity);
                 interstitialAd.loadAd();
@@ -966,12 +926,6 @@ public class AliendroidIntertitial {
 
 
 
-
-
-
-
-
-
     public static void ShowIntertitialGoogleAds(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup,
                                                 int interval) {
         if (counter >= interval) {
@@ -1024,7 +978,7 @@ public class AliendroidIntertitial {
     public static void ShowIntertitialApplovinDis(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup,
                                                   int interval) {
         if (counter >= interval) {
-            if (interstitialAdlovin!= null) {
+            if (interstitialAdlovin!=null) {
                 AppLovinAdDisplayListener listener = new AppLovinAdDisplayListener() {
                     @Override
                     public void adDisplayed(AppLovinAd ad) {
@@ -1267,6 +1221,7 @@ public class AliendroidIntertitial {
     public static void ShowIntertitialSartApp(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup,
                                               int interval) {
 
+
     }
 
 
@@ -1322,5 +1277,8 @@ public class AliendroidIntertitial {
         }
     }
 
+    public static void ShowIntertitialUnity(Activity activity, String selectAdsBackup, String idIntertitial, String idIntertitialBackup,
+                                            int interval) {
 
+    }
 }
