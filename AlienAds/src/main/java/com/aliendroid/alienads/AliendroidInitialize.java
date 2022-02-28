@@ -70,6 +70,16 @@ public class AliendroidInitialize {
             case "UNITY":
 
                 break;
+            case "MIX":
+                AdSettings.setDataProcessingOptions(new String[]{});
+                AppLovinSdk.getInstance(activity).setMediationProvider(AppLovinMediationProvider.MAX);
+                AppLovinSdk sdks = AppLovinSdk.getInstance(activity);
+                sdks.getSettings().setMuted(!sdks.getSettings().isMuted());
+
+                IronSource.init(activity, idInitialize);
+                IntegrationHelper.validateIntegration(activity);
+
+                break;
         }
     }
 

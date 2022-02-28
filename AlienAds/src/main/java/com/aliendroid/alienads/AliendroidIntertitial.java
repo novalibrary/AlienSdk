@@ -91,6 +91,10 @@ public class AliendroidIntertitial {
                         case "UNITY":
 
                             break;
+
+                        case "MIX":
+                            IronSource.showInterstitial(idIntertitialBackup);
+                            break;
                     }
                     LoadIntertitialAdmob(activity, selectAdsBackup, Hpk1, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
                 }
@@ -135,6 +139,9 @@ public class AliendroidIntertitial {
                         case "UNITY":
 
                             break;
+                        case "MIX":
+                            IronSource.showInterstitial(idIntertitialBackup);
+                            break;
                     }
                     LoadIntertitialAdmob(activity, selectAdsBackup, Hpk2, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
                 }
@@ -178,6 +185,9 @@ public class AliendroidIntertitial {
                         case "UNITY":
 
                             break;
+                        case "MIX":
+                            IronSource.showInterstitial(idIntertitialBackup);
+                            break;
                     }
                     LoadIntertitialAdmob(activity, selectAdsBackup, Hpk3, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
                 }
@@ -220,6 +230,9 @@ public class AliendroidIntertitial {
                             break;
                         case "UNITY":
 
+                            break;
+                        case "MIX":
+                            IronSource.showInterstitial(idIntertitialBackup);
                             break;
                     }
                     LoadIntertitialAdmob(activity, selectAdsBackup, idIntertitial, idIntertitialBackup, Hpk1, Hpk2, Hpk3, Hpk4, Hpk5);
@@ -280,6 +293,11 @@ public class AliendroidIntertitial {
                 break;
             case "MOPUB":
 
+                break;
+
+            case "MIX":
+                IronSource.isInterstitialPlacementCapped(idIntertitialBackup);
+                IronSource.loadInterstitial();
                 break;
             case "IRON":
                 IronSource.isInterstitialPlacementCapped(idIntertitialBackup);

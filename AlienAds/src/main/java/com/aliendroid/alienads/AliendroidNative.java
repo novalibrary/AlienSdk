@@ -86,7 +86,8 @@ public class AliendroidNative {
                                 adViewDiscovery.destroy();
                             }
                             break;
-                        case "UNITY":
+                        case "MIX":
+
 
                             break;
                     }
@@ -699,7 +700,8 @@ public class AliendroidNative {
         nativeAdLoader.loadAd(nativeAdView);
     }
 
-    public static void SmallNativeGoogleAds(Activity activity, FrameLayout layNative, String selectAdsBackup, String nativeId, String idNativeBackup) {
+    public static void SmallNativeGoogleAds(Activity activity, String selectAds, String selectAdsBackup, FrameLayout layNative, String nativeId, String idBannerBackup) {
+
 
         AdLoader.Builder builder = new AdLoader.Builder(activity, nativeId);
         builder.forNativeAd(new NativeAd.OnNativeAdLoadedListener() {
@@ -782,7 +784,7 @@ public class AliendroidNative {
                                                         .build();
                                                 nativeAdView = new MaxNativeAdView(binder, activity);
 
-                                                nativeAdLoader = new MaxNativeAdLoader(idNativeBackup, activity);
+                                                nativeAdLoader = new MaxNativeAdLoader(idBannerBackup, activity);
                                                 nativeAdLoader.setRevenueListener(new MaxAdRevenueListener() {
                                                     @Override
                                                     public void onAdRevenuePaid(MaxAd ad) {
@@ -830,7 +832,7 @@ public class AliendroidNative {
                                                 FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
                                                         FrameLayout.LayoutParams.WRAP_CONTENT);
                                                 layNative.addView(adViewIron, 0, layoutParams);
-                                                IronSource.loadBanner(adViewIron, idNativeBackup);
+                                                IronSource.loadBanner(adViewIron, idBannerBackup);
                                                 break;
                                             case "STARTAPP":
 
@@ -838,7 +840,7 @@ public class AliendroidNative {
                                             case "APPLOVIN-D":
                                                 AdRequest.Builder builder = new AdRequest.Builder();
                                                 Bundle bannerExtras = new Bundle();
-                                                bannerExtras.putString("zone_id", idNativeBackup);
+                                                bannerExtras.putString("zone_id", idBannerBackup);
                                                 builder.addCustomEventExtrasBundle(AppLovinCustomEventBanner.class, bannerExtras);
 
                                                 boolean isTablet2 = AppLovinSdkUtils.isTablet(activity);
