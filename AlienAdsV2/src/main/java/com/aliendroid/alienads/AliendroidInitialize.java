@@ -1,5 +1,7 @@
 package com.aliendroid.alienads;
 
+import static com.startapp.sdk.adsbase.Ad.AdType.VIDEO;
+
 import android.app.Activity;
 import android.util.Log;
 
@@ -16,12 +18,13 @@ import com.ironsource.mediationsdk.IronSource;
 import com.ironsource.mediationsdk.integration.IntegrationHelper;
 import com.startapp.sdk.adsbase.StartAppAd;
 import com.startapp.sdk.adsbase.StartAppSDK;
-
+import com.unity3d.ads.UnityAds;
 
 import java.util.Map;
 
 
 public class AliendroidInitialize {
+
 
     public static void SelectAdsAdmob(Activity activity, String selectAdsBackup, String idInitialize) {
         MobileAds.initialize(activity, new OnInitializationCompleteListener() {
@@ -33,8 +36,6 @@ public class AliendroidInitialize {
                     Log.d("MyApp", String.format(
                             "Adapter name: %s, Description: %s, Latency: %d",
                             adapterClass, status.getDescription(), status.getLatency()));
-                    AppLovinPrivacySettings.setHasUserConsent(true, activity);
-                    AppLovinPrivacySettings.setIsAgeRestrictedUser(true, activity);
 
                 }
             }
@@ -48,18 +49,6 @@ public class AliendroidInitialize {
                 } );
                 AppLovinSdk sdk = AppLovinSdk.getInstance(activity);
                 sdk.getSettings().setMuted(!sdk.getSettings().isMuted());
-                break;
-
-            case "MIX":
-                AdSettings.setDataProcessingOptions(new String[]{});
-                AppLovinSdk.getInstance(activity).setMediationProvider(AppLovinMediationProvider.MAX);
-                AppLovinSdk.getInstance( activity).initializeSdk( config -> {
-
-                } );
-                AppLovinSdk sdk2 = AppLovinSdk.getInstance(activity);
-                sdk2.getSettings().setMuted(!sdk2.getSettings().isMuted());
-                IronSource.init(activity, idInitialize);
-                IntegrationHelper.validateIntegration(activity);
                 break;
             case "MOPUB":
                 break;
@@ -92,7 +81,9 @@ public class AliendroidInitialize {
                 }
                 break;
             case "UNITY":
+                UnityAds.initialize (activity, idInitialize, BuildConfig.DEBUG);
                 break;
+            default:
         }
     }
 
@@ -151,6 +142,7 @@ public class AliendroidInitialize {
                 }
                 break;
             case "UNITY":
+                UnityAds.initialize (activity, idInitialize, BuildConfig.DEBUG);
                 break;
         }
     }
@@ -210,12 +202,13 @@ public class AliendroidInitialize {
                 }
                 break;
             case "UNITY":
+                UnityAds.initialize (activity, idInitialize, BuildConfig.DEBUG);
                 break;
         }
     }
 
     public static void SelectAdsApplovinMax(Activity activity, String selectAdsBackup, String idInitialize) {
-
+        AdSettings.setDataProcessingOptions(new String[]{});
         AppLovinSdk.getInstance(activity).setMediationProvider(AppLovinMediationProvider.MAX);
         AppLovinSdk.getInstance(activity).initializeSdk(config -> {
         });
@@ -266,6 +259,7 @@ public class AliendroidInitialize {
                 }
                 break;
             case "UNITY":
+                UnityAds.initialize (activity, idInitialize, BuildConfig.DEBUG);
                 break;
         }
     }
@@ -329,7 +323,7 @@ public class AliendroidInitialize {
                 }
                 break;
             case "UNITY":
-
+                UnityAds.initialize (activity, idInitializeBackupAds, BuildConfig.DEBUG);
                 break;
         }
     }
@@ -389,12 +383,13 @@ public class AliendroidInitialize {
                 }
                 break;
             case "UNITY":
-
+                UnityAds.initialize (activity, idInitializeBackupAds, BuildConfig.DEBUG);
                 break;
         }
     }
 
     public static void SelectAdsUnity(Activity activity, String selectAdsBackup, String idInitialize, String idInitializeBackupAds) {
+        UnityAds.initialize (activity, idInitialize, BuildConfig.DEBUG);
         switch (selectAdsBackup) {
             case "APPLOVIN-D":
                 AppLovinSdk.initializeSdk(activity);
@@ -510,7 +505,7 @@ public class AliendroidInitialize {
                 IntegrationHelper.validateIntegration(activity);
                 break;
             case "UNITY":
-
+                UnityAds.initialize (activity, idInitializeBackupAds, BuildConfig.DEBUG);
                 break;
         }
     }

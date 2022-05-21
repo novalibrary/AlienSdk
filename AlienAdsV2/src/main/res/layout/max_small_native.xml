@@ -22,13 +22,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="2dp"
-                android:background="#FDD835"
+                android:background="@drawable/round_black"
                 android:gravity="center"
                 android:padding="2dp"
                 android:text="Ad"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="@color/gnt_black"
+                android:textColor="@color/native_text_button"
                 android:textSize="10sp" />
 
             <RelativeLayout
@@ -103,8 +103,8 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="5dp"
-                android:background="@drawable/button1"
-                android:textColor="@color/gnt_black"
+                android:background="@drawable/round_black"
+                android:textColor="@color/native_text_button"
                 android:textSize="8sp"
                 tools:text="Install" />
 

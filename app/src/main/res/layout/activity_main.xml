@@ -18,7 +18,7 @@
             <RelativeLayout
                 android:id="@+id/layNative"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="300dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="10dp">
@@ -41,5 +41,16 @@
         </RelativeLayout>
 
     </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:onClick="showinter"
+        android:text="Button" />
 
 </RelativeLayout>
